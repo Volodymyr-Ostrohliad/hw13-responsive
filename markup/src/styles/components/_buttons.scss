@@ -12,7 +12,9 @@
 .box_buttons:last-child {
   position: absolute;
   opacity: 0;
-  @media (min-width: 1200px){ 
+  visibility: hidden;
+  @media (min-width: 1200px) {
+    visibility: visible;
     position: static;
     opacity: 1;
   }
@@ -26,19 +28,19 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 1200px){
-  margin: 0;
-  opacity: 1;
-  position: static;
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
-}
+  @media (min-width: 1200px) {
+    margin: 0;
+    opacity: 1;
+    position: static;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .button-white {
   text-decoration: none;
   width: 120px;
-  background: #FFFFFF;
+  background: #ffffff;
   font-weight: 600;
   font-size: 16px;
   padding: 13px;
@@ -46,47 +48,46 @@
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.5);
   transition: color 0.3s ease;
-  transition: background .3s ease;
+  transition: background 0.3s ease;
 
- &:hover {
-  color: #FF6336;
-  background: black;
-}
+  &:hover {
+    color: #ff6336;
+    background: black;
+  }
 }
 .button-orange {
   text-decoration: none;
   width: 120px;
-  background: #FF6336;
+  background: #ff6336;
   font-weight: 600;
   font-size: 16px;
   padding: 13px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: color 0.3s ease;
 
-
-&:hover {
-  color: #000;
-}
+  &:hover {
+    color: #000;
+  }
 }
 
 .button-orange-2 {
   width: 193px;
   height: 60px;
   padding: 7px 0;
-  background: #FF6336;
+  background: #ff6336;
   font-weight: 600;
   font-size: 16px;
   padding: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-top: 32px;
   transition: color 0.3s ease;
 
   &:hover {
-  color: black;
-}
+    color: black;
+  }
 }
 
 .button-black {
@@ -97,12 +98,12 @@
   font-size: 17px;
   padding: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-top: 32px;
   transition: color 0.3s ease;
 
   &:hover {
-  color: #FF6336;
-}
+    color: #ff6336;
+  }
 }
